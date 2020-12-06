@@ -1,0 +1,20 @@
+server:
+  servlet:
+    context-path: /shiro
+
+spring:
+  application:
+    name: shiro
+  mvc:
+    view:
+      suffix: .jsp
+      prefix: /
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/shirotest?characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 123456789
+mybatis:
+  type-aliases-package: com.ngu.springboot_shiro.domain
+  mapper-locations: classpath:mapper/*.xml
